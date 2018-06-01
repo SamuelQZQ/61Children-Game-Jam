@@ -9,8 +9,11 @@ public class FoodEvent : MonoBehaviour {
     public FoodType foodType;
 
     public int hungryVal, shitVal, weightVal;
-    public bool isDrink;
+    public bool isDrink, isPower;
+    public float godTime;
+
     UpCat cat;
+    DownCat cat2;
 	
 	void Awake () {
         cat = GameObject.FindGameObjectWithTag("WholeCat").GetComponent<UpCat>();
@@ -42,6 +45,11 @@ public class FoodEvent : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.tag == "Cat2")
-            Destroy(this.gameObject);
+        {
+            Destroy(this.gameObject);            
+            cat2.ChangeVal(hungryVal, shitVal, weightVal);
+            if (isPower) cat2.SetGod(godTime);
+        }
+
     }
 }

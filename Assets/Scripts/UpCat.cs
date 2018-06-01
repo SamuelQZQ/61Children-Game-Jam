@@ -10,9 +10,6 @@ public class UpCat : MonoBehaviour {
     float waitPeeTime;
     public float peeDelay;
 
-    bool godMode;
-    float godStartTime, godDelayTime;
-
 
 	void Start () {
         wantPee = false;
@@ -44,11 +41,4 @@ public class UpCat : MonoBehaviour {
         waitPeeTime = Time.time;
     }
 
-    public void SetGod(float delayTime)
-    {
-        // TODO: start god
-        godMode = true;
-        godDelayTime = delayTime;
-        godStartTime = Time.time;
-    }
 }
