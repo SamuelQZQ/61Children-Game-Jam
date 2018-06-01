@@ -9,7 +9,10 @@ public class UpCat : MonoBehaviour {
     float hungryTimeTick;
     public float hungryDeTime = 1;
 
-    public int shitMax;
+    bool isReadyPoo;
+    float readyPoolTime;
+    public float waitPooTime = 1;
+    public int shitMax = 3;
     public int shitWeight = 3;
 
     public float weightScale;
@@ -22,6 +25,7 @@ public class UpCat : MonoBehaviour {
     void Start () {
         wantPee = false;
         hungryTimeTick = 0;
+        isReadyPoo = false;
 	}
 	
 	void Update () {
@@ -40,15 +44,23 @@ public class UpCat : MonoBehaviour {
             // TODO: game over
         }
 
-        if(shit >= shitMax) {
-            Global.isPoo = true;
-            weight -= shitWeight;
-            if (weight < 1) weight = 1;
-            shit = 0;
+        if(shit >= shitMax && !isReadyPoo) {
+            isReadyPoo = true;
+            readyPoolTime = Time.time;
         }
+
+        if (isReadyPoo && Time.time - readyPoolTime > waitPooTime) Shit();
 
         GetComponent<Rigidbody2D>().mass = weight * weightScale;
 	}
+
+    void Shit() {
+        Global.isPoo = true;
+        weight -= shitWeight;
+        if (weight < 1) weight = 1;
+        shit = 0;
+        isReadyPoo = false;
+    }
 
     public void ChangeVal(int hungryVal, int shitVal, int weightVal) 
     {
@@ -62,6 +74,7 @@ public class UpCat : MonoBehaviour {
         wantPee = true;
         waitPeeTime = Time.time;
     }
+
 
 }
 
