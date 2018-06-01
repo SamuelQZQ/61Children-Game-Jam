@@ -30,6 +30,7 @@ public class FoodEvent : MonoBehaviour {
     {
         if (collision.tag == "Cat1")
         {
+            Destroy(this.gameObject);
             cat.ChangeVal(hungryVal, shitVal, weightVal);
             if (isDrink) cat.SetPee();
         }
