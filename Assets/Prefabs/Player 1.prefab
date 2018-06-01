@@ -441,8 +441,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hungry: 0
-  shit: 0
-  weight: 0
+  shit: 1
+  weight: 1
+  hungryDeTime: 0
+  shitMax: 0
+  weightScale: 1
   peeDelay: 0
 --- !u!114 &114543317005014554
 MonoBehaviour:
@@ -496,9 +499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hungry: 0
-  shit: 0
-  weight: 0
-  peeDelay: 0
+  hungryDeTime: 0
 --- !u!212 &212057950722676218
 SpriteRenderer:
   m_ObjectHideFlags: 1

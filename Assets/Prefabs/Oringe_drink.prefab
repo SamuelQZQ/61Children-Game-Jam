@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212881447316508916}
   - component: {fileID: 61245187834076156}
   - component: {fileID: 114648071921287538}
+  - component: {fileID: 50259888446725648}
   m_Layer: 0
   m_Name: Oringe_drink
   m_TagString: Untagged
@@ -42,6 +43,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50259888446725648
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1588559017039948}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!61 &61245187834076156
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -58,7 +79,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 1.682, y: 0.275, z: 0.606, w: 1.1450001}
     pivot: {x: 0.6942649, y: 0.26287273}
-    oldSize: {x: 2.732, y: 2.048}
+    oldSize: {x: 0.344, y: 0.568}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -83,6 +104,8 @@ MonoBehaviour:
   shitVal: 0
   weightVal: 0
   isDrink: 1
+  isPower: 0
+  godTime: 0
 --- !u!212 &212881447316508916
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -92,6 +115,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -107,6 +131,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -124,3 +149,4 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0

@@ -45,7 +45,7 @@ public class DownCat : MonoBehaviour {
 
     public void ChangeVal(int hungryVal, int shitVal, int weightVal)
     {
-        hungry += hungryVal;
+        hungry -= hungryVal;
     }
 
     public void SetGod(float delayTime)

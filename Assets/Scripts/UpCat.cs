@@ -40,7 +40,7 @@ public class UpCat : MonoBehaviour {
         }
 
         if(shit >= shitMax) {
-            // TODO: shit
+            Global.isPoo = true;
             shit = 0;
         }
 
@@ -50,7 +50,7 @@ public class UpCat : MonoBehaviour {
     public void ChangeVal(int hungryVal, int shitVal, int weightVal) 
     {
         weight += weightVal;
-        hungry += hungryVal;
+        hungry -= hungryVal;
         shit += shitVal;
     }
 
