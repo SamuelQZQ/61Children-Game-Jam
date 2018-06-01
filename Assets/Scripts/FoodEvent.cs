@@ -6,9 +6,16 @@ using UnityEngine;
 
 public class FoodEvent : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+    public FoodType foodType;
+
+    public int hungryVal, shitVal, weightVal;
+    public bool isDrink;
+    UpCat cat;
+
+
+	
+	void Awake () {
+        cat = GameObject.FindGameObjectWithTag("Cat1").GetComponent<UpCat>();
 	}
 	
 	// Update is called once per frame
@@ -20,6 +27,10 @@ public class FoodEvent : MonoBehaviour {
     {
         if (collision.collider.tag == "Cat1")
         {
+            cat.ChangeVal(hungryVal, shitVal, weightVal);
+
+            if (isDrink) cat.SetPee();
+                
             Destroy(this.gameObject);
         }
     }
