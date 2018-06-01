@@ -51,4 +51,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3406fc0db8b624da3816e7cf354f32aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foods: []
+  foodsCandidates:
+  - {fileID: 1011745891866784, guid: 5cbe15c0da75d4f3bb51ab188cc53706, type: 2}
+  lootPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  deltaFreshTime: 1

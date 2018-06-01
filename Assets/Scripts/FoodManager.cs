@@ -7,19 +7,19 @@ public class FoodManager : MonoBehaviour {
 
     public GameObject[] foodsCandidates;
     public Transform[] lootPoints;
+    public float deltaFreshTime;
 
     private GameObject[] foods;
-    //private float[] 
+    private float[] lastFreshTime;
     private int numOfFoods;
 
 	// Use this for initialization
 	void Start () {
         numOfFoods = lootPoints.Length;
         foods = new GameObject[numOfFoods];
+        lastFreshTime = new float[numOfFoods];
         for (int i = 0; i < numOfFoods; ++i) {
-            foods[i] = Instantiate(foodsCandidates[(int)Random.Range(0, foodsCandidates.Length)],
-                                   lootPoints[i].position, 
-                                   Quaternion.identity); 
+            CrateFood(i);
         }
 	}
 	
@@ -28,11 +28,27 @@ public class FoodManager : MonoBehaviour {
         
         for (int i = 0; i < numOfFoods; ++i)
         {
-            if(foods[i] == null) {
-                foods[i] = Instantiate(foodsCandidates[(int)Random.Range(0, foodsCandidates.Length)],
-                                   lootPoints[i].position,
-                                   Quaternion.identity);    
+            if(foods[i] == null) 
+            {
+                if(lastFreshTime[i] < 0) 
+                {
+                    lastFreshTime[i] = Time.time;
+                } 
+
+                if(Time.time - lastFreshTime[i] > deltaFreshTime) 
+                {
+                    CrateFood(i);
+                }
+
             }
         }
 	}
+
+    private void CrateFood(int i)
+    {
+        lastFreshTime[i] = -1;
+        foods[i] = Instantiate(foodsCandidates[(int)Random.Range(0, foodsCandidates.Length)],
+                       lootPoints[i].position,
+                       Quaternion.identity);
+    }
 }
