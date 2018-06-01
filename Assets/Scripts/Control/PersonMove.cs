@@ -9,24 +9,26 @@ public class PersonMove : MonoBehaviour {
     public float Scale = 50.0f;
 
     private GameObject Player;
-    private Vector2 lastFrame;
+    private bool dir = true;
 
 	// Use this for initialization
 	void Start () {
         Player = GameObject.Find("Player/Stick");
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        this.GetComponent<Rigidbody2D>().AddForce(new Vector2(Input.GetAxis("Horizontal"), 0) * Scale);
-        Vector2 velocity;
-        velocity = this.GetComponent<Rigidbody2D>().velocity.normalized;
-        if (velocity.x * lastFrame.x < 0)
-            Player.transform.Rotate( new Vector3(180, 0, 0));
+    }
 
+    // Update is called once per frame
+    void Update () {
+        this.GetComponent<Rigidbody2D>().AddForce(new Vector2(Input.GetAxis("Horizontal"), 0) * Scale);
+        if (Input.GetAxis("Horizontal") > 0 && dir == false)
+        {
+            Player.transform.Rotate(new Vector3(180, 0, 0));
+            dir = true;
+        }
+        if (Input.GetAxis("Horizontal") < 0 && dir == true)
+        {
+            Player.transform.Rotate(new Vector3(180, 0, 0));
+            dir = false;
+        }
     }
-    private void LateUpdate()
-    {
-        lastFrame = this.GetComponent<Rigidbody2D>().velocity.normalized;
-    }
+
 }
