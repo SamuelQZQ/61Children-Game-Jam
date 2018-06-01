@@ -4,17 +4,23 @@ using UnityEngine;
 
 public class UpCat : MonoBehaviour {
 
-    public int hungry, shit, weight;
+    public int hungry = 100, shit = 0, weight;
+
+    float hungryTimeTick;
+    public float hungryDeTime = 1;
+
+    public int shitMax;
+
+    public float weightScale;
 
     bool wantPee;
     float waitPeeTime;
     public float peeDelay;
 
-    bool godMode;
-    float godStartTime, godDelayTime;
+
     void Start () {
         wantPee = false;
-        godMode = false;
+        hungryTimeTick = 0;
 	}
 	
 	void Update () {
@@ -23,10 +29,22 @@ public class UpCat : MonoBehaviour {
             // TODO: start pee 
         }
 
-        if(godMode && Time.time - godStartTime > godDelayTime) {
-            godMode = false;
-            // TODO: end god
+        hungryTimeTick += Time.deltaTime;
+        if(hungryTimeTick >= hungryDeTime) {
+            hungry -= 1;
+            hungryTimeTick -= hungryDeTime;
         }
+
+        if(hungry <= 0) {
+            // TODO: game over
+        }
+
+        if(shit >= shitMax) {
+            // TODO: shit
+            shit = 0;
+        }
+
+        GetComponent<Rigidbody2D>().mass = weight * weightScale;
 	}
 
     public void ChangeVal(int hungryVal, int shitVal, int weightVal) 

@@ -5,30 +5,47 @@ using UnityEngine;
 
 public class DownCat : MonoBehaviour {
 
-    public int hungry, shit, weight;
-
-    bool wantPee;
-    float waitPeeTime;
-    public float peeDelay;
+    public int hungry = 100;
+    float hungryTimeTick;
+    public float hungryDeTime = 1;
 
     bool godMode;
     float godStartTime, godDelayTime;
 
+    CatDragStick catDragStick;
+
 	// Use this for initialization
 	void Start () {
-		
+        catDragStick = GameObject.FindGameObjectWithTag("WholeCat").GetComponent<CatDragStick>();
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update () 
+    {
+        if (godMode && Time.time - godStartTime > godDelayTime)
+        {
+            godMode = false;
+            // TODO: end god
+        }
+
+        hungryTimeTick += Time.deltaTime;
+        if (hungryTimeTick >= hungryDeTime)
+        {
+            hungry -= 1;
+            hungryTimeTick -= hungryDeTime;
+        }
+
+        if (hungry <= 0)
+        {
+            // TODO: game over
+        }
+
+        //catDragStick.maxForce = ;
 	}
 
     public void ChangeVal(int hungryVal, int shitVal, int weightVal)
     {
-        weight += weightVal;
         hungry += hungryVal;
-        shit += shitVal;
     }
 
     public void SetGod(float delayTime)
