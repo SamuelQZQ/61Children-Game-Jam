@@ -15,7 +15,6 @@ public class PersonMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(Input.GetAxis("Horizontal"));
         this.GetComponent<Rigidbody2D>().AddForce(new Vector2(Input.GetAxis("Horizontal"), 0) * Scale);
     }
 }
