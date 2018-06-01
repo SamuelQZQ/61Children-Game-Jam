@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Cat1
   - Cat1Stick
+  - Cat2
+  - WholeCat
   layers:
   - Default
   - TransparentFX

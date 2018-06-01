@@ -56,9 +56,10 @@ GameObject:
   - component: {fileID: 50533120309991116}
   - component: {fileID: 233280311501126764}
   - component: {fileID: 114928936597163450}
+  - component: {fileID: 114974851372805470}
   m_Layer: 0
   m_Name: Person
-  m_TagString: Untagged
+  m_TagString: Cat2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,9 +156,10 @@ GameObject:
   - component: {fileID: 114543317005014554}
   - component: {fileID: 50345025653238682}
   - component: {fileID: 61769183972190604}
+  - component: {fileID: 114494725234691506}
   m_Layer: 0
   m_Name: Stick
-  m_TagString: Untagged
+  m_TagString: WholeCat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -301,7 +303,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -427,6 +429,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.232, y: 0.22666667}
   m_EdgeRadius: 0
+--- !u!114 &114494725234691506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1647588923728278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fbaf5aa50b334734abf75fc7030a878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hungry: 0
+  shit: 0
+  weight: 0
+  peeDelay: 0
 --- !u!114 &114543317005014554
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -452,8 +469,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8be3e98a8fa54b02a46b34f8e4eb89a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxForce: 100
-  scale: 5
+  maxForce: 5
+  scale: 1
   dragTransform: {fileID: 4511124985908728}
 --- !u!114 &114928936597163450
 MonoBehaviour:
@@ -467,6 +484,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scale: 1000
+--- !u!114 &114974851372805470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1189481774314076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18535bb2bc5ed2742aa2ad5dbaf88cf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hungry: 0
+  shit: 0
+  weight: 0
+  peeDelay: 0
 --- !u!212 &212057950722676218
 SpriteRenderer:
   m_ObjectHideFlags: 1

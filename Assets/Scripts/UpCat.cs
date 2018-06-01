@@ -10,8 +10,9 @@ public class UpCat : MonoBehaviour {
     float waitPeeTime;
     public float peeDelay;
 
-
-	void Start () {
+    bool godMode;
+    float godStartTime, godDelayTime;
+    void Start () {
         wantPee = false;
         godMode = false;
 	}

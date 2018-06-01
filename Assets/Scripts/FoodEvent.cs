@@ -12,15 +12,18 @@ public class FoodEvent : MonoBehaviour {
     public bool isDrink, isPower;
     public float godTime;
 
+    private bool isTouched = false;
+
     UpCat cat;
     DownCat cat2;
 	
 	void Awake () {
         cat = GameObject.FindGameObjectWithTag("WholeCat").GetComponent<UpCat>();
-	}
+        cat2 = GameObject.FindGameObjectWithTag("Cat2").GetComponent<DownCat>();
+    }
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         this.GetComponent<Rigidbody2D>().Sleep();
     }
 
@@ -31,18 +34,21 @@ public class FoodEvent : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Cat1")
+        if (collision.tag == "Cat1" && !isTouched)
         {
             Destroy(this.gameObject);
             cat.ChangeVal(hungryVal, shitVal, weightVal);
             if (isDrink) cat.SetPee();
         }
         else if (collision.tag == "Cat1Stick")
+        {
             this.GetComponent<Rigidbody2D>().WakeUp();
+            isTouched = true;
+        }
 
-    }
+        }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+        private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.tag == "Cat2")
         {
