@@ -10,6 +10,7 @@ public class UpCat : MonoBehaviour {
     public float hungryDeTime = 1;
 
     public int shitMax;
+    public int shitWeight = 3;
 
     public float weightScale;
 
@@ -41,6 +42,8 @@ public class UpCat : MonoBehaviour {
 
         if(shit >= shitMax) {
             Global.isPoo = true;
+            weight -= shitWeight;
+            if (weight < 1) weight = 1;
             shit = 0;
         }
 
