@@ -73,6 +73,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4080520288562604}
   - component: {fileID: 212880808440508700}
+  - component: {fileID: 114890839403767250}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -196,14 +197,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1087718101849954}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 30, y: 1, z: 1}
   m_Children:
   - {fileID: 4511124985908728}
   m_Father: {fileID: 4815482575167376}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 47.282}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4511124985908728
 Transform:
   m_ObjectHideFlags: 1
@@ -249,7 +250,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1647588923728278}
-  m_LocalRotation: {x: -0, y: -0, z: 0.40100205, w: 0.91607714}
+  m_LocalRotation: {x: 0, y: 0, z: 0.40100467, w: 0.91607606}
   m_LocalPosition: {x: -1.37, y: -1.45, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -258,7 +259,7 @@ Transform:
   - {fileID: 4080520288562604}
   m_Father: {fileID: 4998576433093798}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 47.282}
 --- !u!4 &4977765902393722
 Transform:
   m_ObjectHideFlags: 1
@@ -444,7 +445,8 @@ MonoBehaviour:
   shit: 1
   weight: 1
   hungryDeTime: 0
-  shitMax: 0
+  shitMax: 10000
+  shitWeight: 3
   weightScale: 1
   peeDelay: 0
 --- !u!114 &114543317005014554
@@ -475,6 +477,19 @@ MonoBehaviour:
   maxForce: 5
   scale: 1
   dragTransform: {fileID: 4511124985908728}
+--- !u!114 &114890839403767250
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1192866019469798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b62adcc4aef721b498fd76758cd6c78c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPoo: 0
+  Poo: {fileID: 1930944252465060, guid: b651e23db8ec24e479bcac8df93d9587, type: 2}
 --- !u!114 &114928936597163450
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -778,7 +793,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -1.7550496, y: -0.00083893543}
+  m_ConnectedAnchor: {x: -1.7550497, y: -0.000829041}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
