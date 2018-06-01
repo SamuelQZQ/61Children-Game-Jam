@@ -30,8 +30,10 @@ public class FoodEvent : MonoBehaviour {
     {
         if (collision.tag == "Cat1")
         {
-         cat.ChangeVal(hungryVal, shitVal, weightVal);
-         if (isDrink) cat.SetPee();
+            cat.ChangeVal(hungryVal, shitVal, weightVal);
+            if (isDrink) cat.SetPee();
         }
+        else if (collision.tag == "Cat1Stick")
+            this.GetComponent<Rigidbody2D>().WakeUp();
     }
 }
