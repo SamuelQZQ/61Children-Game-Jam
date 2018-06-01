@@ -9,7 +9,6 @@ public class StickLength : MonoBehaviour {
     public float MaxOffset = 1.0f;
     public float Scale = 0.1f;
     public GameObject Person;
-    public GameObject Cat;
 
     private float Dis;
     private float oldDis;
@@ -27,12 +26,10 @@ public class StickLength : MonoBehaviour {
         if (Input.GetAxis("Vertical") > 0 && (Dis - oldDis <= MaxOffset))   // if the up button was pressed
         {
             this.transform.position += dir * Scale;
-            Cat.transform.position += dir * Scale;
         }
         if (Input.GetAxis("Vertical") < 0 && (Dis - oldDis >= -MaxOffset)) // if the down button was pressed 
         {
             this.transform.position += (-1 * dir * Scale);
-            Cat.transform.position += (-1 * dir * Scale);
         }
         }
 

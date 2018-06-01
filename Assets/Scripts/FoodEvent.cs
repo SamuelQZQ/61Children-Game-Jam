@@ -11,27 +11,27 @@ public class FoodEvent : MonoBehaviour {
     public int hungryVal, shitVal, weightVal;
     public bool isDrink;
     UpCat cat;
-
-
 	
 	void Awake () {
         cat = GameObject.FindGameObjectWithTag("Cat1").GetComponent<UpCat>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+	// Use this for initialization
+	void Start () {
+        this.GetComponent<Rigidbody2D>().Sleep();
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.collider.tag == "Cat1")
+        if (collision.tag == "Cat1")
         {
-            cat.ChangeVal(hungryVal, shitVal, weightVal);
-
-            if (isDrink) cat.SetPee();
-                
-            Destroy(this.gameObject);
+         cat.ChangeVal(hungryVal, shitVal, weightVal);
+         if (isDrink) cat.SetPee();
         }
     }
 }

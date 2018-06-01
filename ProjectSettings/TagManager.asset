@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Cat1
+  - Cat1Stick
   layers:
   - Default
   - TransparentFX
