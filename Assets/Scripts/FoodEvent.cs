@@ -13,7 +13,7 @@ public class FoodEvent : MonoBehaviour {
     UpCat cat;
 	
 	void Awake () {
-        cat = GameObject.FindGameObjectWithTag("Cat1").GetComponent<UpCat>();
+        cat = GameObject.FindGameObjectWithTag("WholeCat").GetComponent<UpCat>();
 	}
 
 	// Use this for initialization
@@ -36,5 +36,12 @@ public class FoodEvent : MonoBehaviour {
         }
         else if (collision.tag == "Cat1Stick")
             this.GetComponent<Rigidbody2D>().WakeUp();
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Cat2")
+            Destroy(this.gameObject);
     }
 }
