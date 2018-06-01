@@ -25,7 +25,7 @@ public class StickLength : MonoBehaviour {
         dir = this.transform.position - Person.transform.position;
         if (Input.GetAxis("Vertical") > 0 && (Dis - oldDis <= MaxOffset ))   // if the up button was pressed
             this.transform.position += dir * Scale;
-        if (Input.GetAxis("Vertical") < 0 && (oldDis - Dis <= -MaxOffset)) // if the down button was pressed 
+        if (Input.GetAxis("Vertical") < 0 && (Dis - oldDis >= -MaxOffset)) // if the down button was pressed 
             this.transform.position += (-1 * dir * Scale);
         }
 
