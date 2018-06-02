@@ -18,28 +18,27 @@ public class FoodManager : MonoBehaviour {
         numOfFoods = lootPoints.Length;
         foods = new GameObject[numOfFoods];
         lastFreshTime = new float[numOfFoods];
-        for (int i = 0; i < numOfFoods; ++i) {
-            CrateFood(i);
-        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        
-        for (int i = 0; i < numOfFoods; ++i)
-        {
-            if(foods[i] == null) 
+
+        if(Global.gameStart) {
+            for (int i = 0; i < numOfFoods; ++i)
             {
-                if(lastFreshTime[i] < 0) 
+                if (foods[i] == null)
                 {
-                    lastFreshTime[i] = Time.time;
-                } 
+                    if (lastFreshTime[i] < 0)
+                    {
+                        lastFreshTime[i] = Time.time;
+                    }
 
-                if(Time.time - lastFreshTime[i] > deltaFreshTime) 
-                {
-                    CrateFood(i);
+                    if (Time.time - lastFreshTime[i] > deltaFreshTime)
+                    {
+                        CrateFood(i);
+                    }
+
                 }
-
             }
         }
 	}
