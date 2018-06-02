@@ -1075,7 +1075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hungry: 10
-  hungryDeTime: 2.4
+  hungryDeTime: 5
 --- !u!212 &212143107181681988
 SpriteRenderer:
   m_ObjectHideFlags: 1
