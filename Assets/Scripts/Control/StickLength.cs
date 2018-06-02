@@ -13,16 +13,20 @@ public class StickLength : MonoBehaviour {
     private float Dis;
     private float oldDis;
     private Vector3 dir;
+    private Vector3 AnchorPos;
 
 	// Use this for initialization
 	void Start () {
-        oldDis = (this.transform.position - Person.transform.position).magnitude;
+        AnchorPos = new Vector2(Person.transform.position.x, Person.transform.position.y) + Person.GetComponent<HingeJoint2D>().anchor;
+        oldDis = (this.transform.position - AnchorPos).magnitude;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        Dis = (this.transform.position - Person.transform.position).magnitude;
-        dir = this.transform.position - Person.transform.position;
+        AnchorPos = new Vector2(Person.transform.position.x, Person.transform.position.y) + Person.GetComponent<HingeJoint2D>().anchor;
+        Dis = (this.transform.position - AnchorPos).magnitude;
+        dir = this.transform.position - AnchorPos;
+        Debug.DrawLine(this.transform.position, AnchorPos, Color.green);
         if (Input.GetAxis("Vertical") > 0 && (Dis - oldDis <= MaxOffset))   // if the up button was pressed
         {
             this.transform.position += dir * Scale;
