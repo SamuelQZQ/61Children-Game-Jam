@@ -935,7 +935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pee: {fileID: 1408169955583082, guid: 1ca7101b3d24c0c42ad1b67fb06c1841, type: 2}
-  Scale: 1
+  Scale: 8
   Anchor: {fileID: 1424258617662658}
   Midpoint: {fileID: 1345565853650510}
 --- !u!114 &114184442140839682

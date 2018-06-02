@@ -8,7 +8,7 @@ TagManager:
   - Cat1Stick
   - Cat2
   - WholeCat
-  - floor
+  - Floor
   layers:
   - Default
   - TransparentFX
