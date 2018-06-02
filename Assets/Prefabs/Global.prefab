@@ -52,6 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15b37034acba36c479eb032606aec5a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeLeft: {fileID: 0}
 --- !u!114 &114645220838263322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -63,3 +64,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e471fa2fd4afb94685dc032e4bd5838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UIBar: {fileID: 0}

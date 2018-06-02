@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GlobalMono1 : MonoBehaviour {
 
+    public Text timeLeft;
+
     private GameObject UpCat;
     private GameObject DownCat;
-
 
 	// Use this for initialization
 	void Start () {
@@ -16,8 +18,13 @@ public class GlobalMono1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Global.HungryDegree1 = UpCat.GetComponent<UpCat>().hungry;
-        Global.HungryDegree2 = DownCat.GetComponent<DownCat>().hungry;
+        if (Global.gameStart)
+        {
+            Global.TimeLeft -= Time.deltaTime;
+            timeLeft.text = ((int)Global.TimeLeft).ToString();
+            Global.HungryDegree1 = UpCat.GetComponent<UpCat>().hungry;
+            Global.HungryDegree2 = DownCat.GetComponent<DownCat>().hungry;
+        }
     }
 }
 
@@ -28,6 +35,7 @@ public class Global
     public static bool isRightMove = false;
     public static bool gameStart = false;
     public static bool gameEnd = false;
+    public static float TimeLeft = 200;
     public static int HungryDegree1 = 100;
     public static int FoodCount1 = 0;
     public static int HungryDegree2 = 100;

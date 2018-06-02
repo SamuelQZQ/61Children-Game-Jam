@@ -113,6 +113,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &79222498 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114736864755122672, guid: 7c2e38a931374ad42bea663eab50f2fd,
+    type: 2}
+  m_PrefabInternal: {fileID: 156624207}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &156624207
 Prefab:
   m_ObjectHideFlags: 0
@@ -590,6 +596,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8000460996928429c941ada08e8c9eda, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1182345905 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1265108049193942, guid: 7c2e38a931374ad42bea663eab50f2fd,
+    type: 2}
+  m_PrefabInternal: {fileID: 156624207}
 --- !u!4 &1390468981 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4097443344587518, guid: 2c3df802c894948dab6711efc5c39c14,
@@ -693,6 +704,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114645220838263322, guid: 78f13196d0a5e404daa8a4d812fe03db,
+        type: 2}
+      propertyPath: UIBar
+      value: 
+      objectReference: {fileID: 1182345905}
+    - target: {fileID: 114439692179841424, guid: 78f13196d0a5e404daa8a4d812fe03db,
+        type: 2}
+      propertyPath: timeLeft
+      value: 
+      objectReference: {fileID: 79222498}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78f13196d0a5e404daa8a4d812fe03db, type: 2}
   m_IsPrefabParent: 0
