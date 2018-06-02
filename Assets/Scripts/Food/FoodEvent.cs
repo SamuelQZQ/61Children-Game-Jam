@@ -12,6 +12,8 @@ public class FoodEvent : MonoBehaviour {
     public bool isDrink, isPower;
     public float godTime;
 
+    public AudioClip clipUpCat;
+    public AudioClip clipDownCat;
     private bool isTouched = false;
 
     UpCat cat;
@@ -42,6 +44,8 @@ public class FoodEvent : MonoBehaviour {
             Global.FoodCount1 ++ ;
             cat.ChangeVal(hungryVal, shitVal, weightVal);
             if (isDrink) cat.SetPee();
+
+            if(clipUpCat) cat.GetComponent<UpCatMiao>().PlayAudio(clipUpCat);
         }
         else if (collision.tag == "Cat1Stick")
         {
@@ -60,6 +64,8 @@ public class FoodEvent : MonoBehaviour {
             Global.FoodCount2 ++;
             cat2.ChangeVal(hungryVal, shitVal, weightVal);
             if (isPower) cat2.SetGod(godTime);
+
+            if(clipDownCat) cat.GetComponent<UpCatMiao>().PlayAudio(clipDownCat);
         }
 
     }
