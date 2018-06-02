@@ -71,8 +71,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4080520288562604}
   - component: {fileID: 212880808440508700}
+  - component: {fileID: 95247889187165770}
+  - component: {fileID: 114549080159207872}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: CatBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -309,7 +311,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1360239745379960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.13, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4438246299725746}
@@ -457,6 +459,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14815506, y: 0.09985483}
   m_EdgeRadius: 0
+--- !u!95 &95247889187165770
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1192866019469798}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e0d74e9ff6c394a3cb22daf80815da4b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114494725234691506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -473,7 +492,7 @@ MonoBehaviour:
   weight: 1
   hungryDeTime: 0
   waitPooTime: 1
-  shitMax: 5
+  shitMax: 10000
   shitWeight: 3
   weightScale: 1
   peeDelay: 0
@@ -491,6 +510,18 @@ MonoBehaviour:
   MaxOffset: 1
   Scale: 0.1
   Person: {fileID: 1189481774314076}
+--- !u!114 &114549080159207872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1192866019469798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcd3f2891273f4d5cbf9545bbcd119b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upCat: {fileID: 114494725234691506}
 --- !u!114 &114653796778467290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -502,8 +533,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8be3e98a8fa54b02a46b34f8e4eb89a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxForce: 5
-  scale: 1
+  maxForce: 13
+  scale: 3
   dragTransform: {fileID: 4511178895195546}
 --- !u!114 &114822571831943684
 MonoBehaviour:
@@ -732,7 +763,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -1.3944297, y: -0.008122802}
+  m_ConnectedAnchor: {x: -1.3944297, y: -0.008122921}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
