@@ -39,6 +39,7 @@ public class FoodEvent : MonoBehaviour {
         if (collision.tag == "Cat1" && !isTouched)
         {
             Destroy(this.gameObject);
+            Global.FoodCount1 ++ ;
             cat.ChangeVal(hungryVal, shitVal, weightVal);
             if (isDrink) cat.SetPee();
         }
@@ -55,7 +56,8 @@ public class FoodEvent : MonoBehaviour {
     {
         if (collision.collider.tag == "Cat2")
         {
-            Destroy(this.gameObject);            
+            Destroy(this.gameObject);
+            Global.FoodCount2 ++;
             cat2.ChangeVal(hungryVal, shitVal, weightVal);
             if (isPower) cat2.SetGod(godTime);
         }

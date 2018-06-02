@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GlobalMono : MonoBehaviour {
+public class HungryFoodCount : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -14,5 +14,3 @@ public class GlobalMono : MonoBehaviour {
 		
 	}
 }
-
-
