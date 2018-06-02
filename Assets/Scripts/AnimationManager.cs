@@ -24,6 +24,7 @@ public class AnimationManager : MonoBehaviour {
         if (info.normalizedTime >= 1.0f)
         {
             cat2.GetComponent<Rigidbody2D>().gravityScale = gravity;
+            Global.gameStart = true;
         }
 	}
 }
