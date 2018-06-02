@@ -16,7 +16,7 @@ public class ProgressBar : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        Hungry1.GetComponent<Image>().fillAmount = (float)Global.HungryDegree1 / 100;
-        Hungry2.GetComponent<Image>().fillAmount = (float)Global.HungryDegree2 / 100;
+        Hungry1.GetComponent<Image>().fillAmount = (float)Global.HungryDegree1 / 10;
+        Hungry2.GetComponent<Image>().fillAmount = (float)Global.HungryDegree2 / 10;
     }
 }
