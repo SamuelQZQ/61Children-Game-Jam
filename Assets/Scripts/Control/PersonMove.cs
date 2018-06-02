@@ -13,7 +13,7 @@ public class PersonMove : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Player = GameObject.Find("Player/Stick");
+        Player = GameObject.FindGameObjectWithTag("WholeCat");
     }
 
     // Update is called once per frame
