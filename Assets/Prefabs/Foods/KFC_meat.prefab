@@ -102,12 +102,12 @@ MonoBehaviour:
   foodType: 4
   hungryVal: -4
   shitVal: 2
-  weightVal: 4
+  weightVal: 5
   isDrink: 0
   isPower: 0
   godTime: 0
-  clipUpCat: {fileID: 0}
-  clipDownCat: {fileID: 0}
+  clipUpCat: {fileID: 8300000, guid: 44ab231f54e154754bae4b54612d5b0e, type: 3}
+  clipDownCat: {fileID: 8300000, guid: 75073f104ca420349947e734a3aa9a11, type: 3}
   upCatHeadAnimator: {fileID: 0}
 --- !u!212 &212444414541370908
 SpriteRenderer:
@@ -118,7 +118,6 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -134,7 +133,6 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -152,4 +150,3 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
