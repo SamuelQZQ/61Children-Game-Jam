@@ -11,8 +11,13 @@ public class AnimationManager : MonoBehaviour {
     private GameObject cat2;
     private float gravity;
 
-	// Use this for initialization
-	void Start () {
+    private void Awake()
+    {
+        UIBar.SetActive(false);
+    }
+
+    // Use this for initialization
+    void Start () {
         Camera = GameObject.FindGameObjectWithTag("MainCamera");
         cat2 = GameObject.FindGameObjectWithTag("WholeCat");
         animator = Camera.GetComponent<Animator>();
