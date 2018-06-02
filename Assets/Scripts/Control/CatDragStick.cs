@@ -22,10 +22,10 @@ public class CatDragStick : MonoBehaviour {
 
             Vector3 dragForce = dragTransform.position - mousePositionInWorld;
             dragForce *= - scale;
+            dragForce = dragForce.normalized * (Global.HungryDegree2 / 10);
 			if(dragForce.magnitude > maxForce) {
 				dragForce =  dragForce.normalized * maxForce;
 			}
-
             GetComponent<Rigidbody2D>().AddForceAtPosition(dragForce, dragTransform.position);
 		}		
 	}
