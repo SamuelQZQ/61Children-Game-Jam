@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4940963894756732}
   - component: {fileID: 212098615093038074}
-  - component: {fileID: 61440517957940386}
   - component: {fileID: 114071074227737340}
   - component: {fileID: 50025037681028810}
+  - component: {fileID: 61480813075286384}
   m_Layer: 0
   m_Name: Big_vige
   m_TagString: Untagged
@@ -63,7 +63,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61440517957940386
+--- !u!61 &61480813075286384
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -75,18 +75,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.3555048, y: 0.34100312}
   m_SpriteTilingProperty:
-    border: {x: 0.31800002, y: 0.091000006, z: 1.2720001, w: 0.882}
+    border: {x: 0.53000003, y: 0.15166667, z: 2.1200001, w: 1.47}
     pivot: {x: 0.30573508, y: 0.30860442}
-    oldSize: {x: 1.098, y: 1.069}
+    oldSize: {x: 1.83, y: 1.7816666}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 1.83, y: 1.7816666}
   m_EdgeRadius: 0
 --- !u!114 &114071074227737340
 MonoBehaviour:

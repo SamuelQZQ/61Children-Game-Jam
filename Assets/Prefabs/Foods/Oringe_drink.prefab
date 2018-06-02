@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4167931174295698}
   - component: {fileID: 212881447316508916}
-  - component: {fileID: 61245187834076156}
   - component: {fileID: 114648071921287538}
   - component: {fileID: 50259888446725648}
+  - component: {fileID: 61939081512499532}
   m_Layer: 0
   m_Name: Oringe_drink
   m_TagString: Untagged
@@ -63,7 +63,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61245187834076156
+--- !u!61 &61939081512499532
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -75,18 +75,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.11137852, y: 0.22448048}
   m_SpriteTilingProperty:
-    border: {x: 1.682, y: 0.275, z: 0.606, w: 1.1450001}
+    border: {x: 2.8033333, y: 0.45833334, z: 1.01, w: 1.9083334}
     pivot: {x: 0.6942649, y: 0.26287273}
-    oldSize: {x: 0.344, y: 0.568}
+    oldSize: {x: 0.5733333, y: 0.94666666}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.5733333, y: 0.94666666}
   m_EdgeRadius: 0
 --- !u!114 &114648071921287538
 MonoBehaviour:

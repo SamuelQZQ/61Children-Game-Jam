@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4884074448110748}
   - component: {fileID: 212650933669992694}
-  - component: {fileID: 61859233454688826}
   - component: {fileID: 114455859416897796}
   - component: {fileID: 50424541674957964}
+  - component: {fileID: 61808368868247898}
   m_Layer: 0
   m_Name: Bocai_vige
   m_TagString: Untagged
@@ -63,7 +63,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61859233454688826
+--- !u!61 &61808368868247898
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -75,18 +75,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.5488682, y: 0.2186088}
   m_SpriteTilingProperty:
-    border: {x: 1.404, y: 0.268, z: 0, w: 1.125}
+    border: {x: 2.3400002, y: 0.4466667, z: 0, w: 1.875}
     pivot: {x: 0.75648046, y: 0.2831979}
-    oldSize: {x: 1.284, y: 0.605}
+    oldSize: {x: 2.14, y: 1.0083333}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 2.14, y: 1.0083333}
   m_EdgeRadius: 0
 --- !u!114 &114455859416897796
 MonoBehaviour:

@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4583582196658612}
   - component: {fileID: 212444414541370908}
-  - component: {fileID: 61963758246237088}
   - component: {fileID: 114070845631888106}
   - component: {fileID: 50307201688049358}
+  - component: {fileID: 61915235673427042}
   m_Layer: 0
   m_Name: KFC_meat
   m_TagString: Untagged
@@ -63,7 +63,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61963758246237088
+--- !u!61 &61915235673427042
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -75,18 +75,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.105368555, y: -0.1065042}
   m_SpriteTilingProperty:
-    border: {x: 1.1680001, y: 0.99300003, z: 0.67600006, w: 0.483}
+    border: {x: 1.9466667, y: 1.6550001, z: 1.1266667, w: 0.805}
     pivot: {x: 0.5812611, y: 0.6219514}
-    oldSize: {x: 0.778, y: 0.524}
+    oldSize: {x: 1.2966666, y: 0.87333333}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 1.2966666, y: 0.87333333}
   m_EdgeRadius: 0
 --- !u!114 &114070845631888106
 MonoBehaviour:

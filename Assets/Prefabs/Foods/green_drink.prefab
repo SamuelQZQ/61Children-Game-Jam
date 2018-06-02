@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4296396330434830}
   - component: {fileID: 212936501547870526}
-  - component: {fileID: 61038174927759588}
   - component: {fileID: 114288602896618266}
   - component: {fileID: 50236847005177462}
+  - component: {fileID: 61376669240047350}
   m_Layer: 0
   m_Name: green_drink
   m_TagString: Untagged
@@ -63,7 +63,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61038174927759588
+--- !u!61 &61376669240047350
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -75,18 +75,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.20057744, y: -0.21306741}
   m_SpriteTilingProperty:
-    border: {x: 2.164, y: 1.2080001, z: 0.142, w: 0.202}
+    border: {x: 3.6066668, y: 2.0133333, z: 0.23666668, w: 0.33666667}
     pivot: {x: 0.8796419, y: 0.73543364}
-    oldSize: {x: 0.317, y: 0.543}
+    oldSize: {x: 0.5283333, y: 0.905}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.5283333, y: 0.905}
   m_EdgeRadius: 0
 --- !u!114 &114288602896618266
 MonoBehaviour:

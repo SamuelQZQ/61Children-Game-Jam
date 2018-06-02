@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4570423256236988}
   - component: {fileID: 212878375704004050}
-  - component: {fileID: 61120784746732974}
   - component: {fileID: 114273003185227182}
   - component: {fileID: 50235228754842106}
+  - component: {fileID: 61629618315188858}
   m_Layer: 0
   m_Name: Cola
   m_TagString: Untagged
@@ -38,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1617744538636264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.08, y: 1.57, z: -6.6784997}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -63,7 +63,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61120784746732974
+--- !u!61 &61629618315188858
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -79,14 +79,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.47, y: 5.65}
+    oldSize: {x: 1.735, y: 2.825}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 1.735, y: 2.825}
   m_EdgeRadius: 0
 --- !u!114 &114273003185227182
 MonoBehaviour:
