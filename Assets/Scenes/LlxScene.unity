@@ -752,10 +752,28 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 114974851372805470, guid: e464f38f8d52e634fa9092aa0b27280f,
+    - target: {fileID: 114494725234691506, guid: e464f38f8d52e634fa9092aa0b27280f,
         type: 2}
-      propertyPath: hungryDeTime
-      value: 5
+      propertyPath: shitMax
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4080520288562604, guid: e464f38f8d52e634fa9092aa0b27280f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.10108876
+      objectReference: {fileID: 0}
+    - target: {fileID: 4080520288562604, guid: e464f38f8d52e634fa9092aa0b27280f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.09977707
+      objectReference: {fileID: 0}
+    - target: {fileID: 212161820892649304, guid: e464f38f8d52e634fa9092aa0b27280f,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 369447503
+      objectReference: {fileID: 0}
+    - target: {fileID: 212161820892649304, guid: e464f38f8d52e634fa9092aa0b27280f,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e464f38f8d52e634fa9092aa0b27280f, type: 2}
