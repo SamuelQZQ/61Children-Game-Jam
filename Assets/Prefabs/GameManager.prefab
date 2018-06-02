@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4820574069505604}
   - component: {fileID: 114494248957754206}
+  - component: {fileID: 82714264944154326}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -40,6 +41,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &82714264944154326
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1754896174031820}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9de8c6135c8fd4a3d864ee21b7cadee0, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114494248957754206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53,6 +134,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodsCandidates:
   - {fileID: 1800858164053628, guid: 5152717dc39ed994b89e1125b416f9dc, type: 2}
+  - {fileID: 1344007288037118, guid: 59190b30e452f014fa097ba26842d213, type: 2}
+  - {fileID: 1656546745438438, guid: b38f90b3077e7c44c8aaf136e936c273, type: 2}
+  - {fileID: 1617744538636264, guid: dd56aa96c9b4e4e4bbd3991e95d0be6c, type: 2}
+  - {fileID: 1395282867839614, guid: 019995550e9ebae43a31c8078fabece2, type: 2}
+  - {fileID: 1958288617075270, guid: 845528f7aa45cee4693646d47de46b52, type: 2}
+  - {fileID: 1580837325067950, guid: 39d347bc3f275bf43bf55a33527b7f64, type: 2}
+  - {fileID: 1588559017039948, guid: 3565f1480445ad7419db60ffe8d374a1, type: 2}
+  - {fileID: 1169935190845668, guid: 33a4ff54194fbbf4c90bfd6ba4868543, type: 2}
+  - {fileID: 1363548440534778, guid: 9c3717648e4ce5a419c3ad733a90759b, type: 2}
+  - {fileID: 1022793782465896, guid: ab36ee268bdeaac4581825b4a1ff968e, type: 2}
+  - {fileID: 1464601260495956, guid: 8a1cacc3ff626f1418d0a302f90d91fd, type: 2}
   lootPoints:
   - {fileID: 0}
   - {fileID: 0}
