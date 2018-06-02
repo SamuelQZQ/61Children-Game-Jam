@@ -31,7 +31,7 @@ public class UpCat : MonoBehaviour {
 	void Update () {
         if(wantPee && Time.time - waitPeeTime > peeDelay) {
             wantPee = false;
-            // TODO: start pee 
+            Global.isPee = true;
         }
 
         hungryTimeTick += Time.deltaTime;

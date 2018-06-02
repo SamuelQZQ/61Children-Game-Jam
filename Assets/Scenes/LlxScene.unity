@@ -419,11 +419,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4588eeabeb0b54ae7b83b32234330028, type: 2}
   m_IsPrefabParent: 0
---- !u!224 &772162421 stripped
-RectTransform:
-  m_PrefabParentObject: {fileID: 224684998417785730, guid: 4588eeabeb0b54ae7b83b32234330028,
-    type: 2}
-  m_PrefabInternal: {fileID: 594082699}
 --- !u!4 &941769949 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4097443344587518, guid: 2c3df802c894948dab6711efc5c39c14,
@@ -472,6 +467,10 @@ Prefab:
     - target: {fileID: 4083793518635708, guid: 8000460996928429c941ada08e8c9eda, type: 2}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113595723024070, guid: 8000460996928429c941ada08e8c9eda, type: 2}
+      propertyPath: m_TagString
+      value: floor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8000460996928429c941ada08e8c9eda, type: 2}
@@ -709,97 +708,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ff475b22ae6d4a48960cc16b52caf87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1608973322
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1470769707148040, guid: 4588eeabeb0b54ae7b83b32234330028,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1608973323}
-  - component: {fileID: 1608973326}
-  - component: {fileID: 1608973325}
-  - component: {fileID: 1608973324}
-  m_Layer: 5
-  m_Name: Washer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1608973323
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 224387620871253580, guid: 4588eeabeb0b54ae7b83b32234330028,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1608973322}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000799, y: 1.0000799, z: 1.0000799}
-  m_Children: []
-  m_Father: {fileID: 772162421}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.0000009834766}
-  m_SizeDelta: {x: 1500, y: 720}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &1608973324
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 95431399737383250, guid: 4588eeabeb0b54ae7b83b32234330028,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1608973322}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d909192bd4e3c418bb3327ab6485c11b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &1608973325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114022077928715942, guid: 4588eeabeb0b54ae7b83b32234330028,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1608973322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 8856492448439455194e40479347d5bf, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1608973326
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 222686814679698842, guid: 4588eeabeb0b54ae7b83b32234330028,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1608973322}
 --- !u!4 &1718221920 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4506032503308818, guid: 2c3df802c894948dab6711efc5c39c14,
