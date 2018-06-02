@@ -24,6 +24,7 @@ public class GlobalMono1 : MonoBehaviour {
 public class Global
 {
     public static bool isPoo = false;
+    public static bool isPee = false;
     public static bool gameEnd = false;
     public static int HungryDegree1 = 100;
     public static int FoodCount1 = 0;

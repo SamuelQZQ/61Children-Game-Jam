@@ -203,6 +203,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4511124985908728}
   - component: {fileID: 114822571831943684}
+  - component: {fileID: 114177613587935598}
   m_Layer: 0
   m_Name: PooPoint
   m_TagString: Untagged
@@ -922,6 +923,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114177613587935598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1521011243910498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e2051fb0fece44d91fae2b74c60d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pee: {fileID: 1408169955583082, guid: 1ca7101b3d24c0c42ad1b67fb06c1841, type: 2}
+  Scale: 1
+  Anchor: {fileID: 1424258617662658}
+  Midpoint: {fileID: 1345565853650510}
 --- !u!114 &114184442140839682
 MonoBehaviour:
   m_ObjectHideFlags: 1
