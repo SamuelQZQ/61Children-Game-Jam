@@ -801,7 +801,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -845,7 +845,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -869,7 +869,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!82 &82870410225052530
 AudioSource:
   m_ObjectHideFlags: 1
@@ -881,7 +881,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -981,7 +981,7 @@ MonoBehaviour:
   hungry: 100
   shit: 0
   weight: 1
-  hungryDeTime: 0
+  hungryDeTime: 5
   waitPooTime: 1
   shitMax: 10000
   shitWeight: 3
@@ -1025,8 +1025,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8be3e98a8fa54b02a46b34f8e4eb89a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxForce: 10
-  scale: 3
+  maxForce: 30
+  scale: 20
   dragTransform: {fileID: 4511178895195546}
 --- !u!114 &114732018081071458
 MonoBehaviour:
@@ -1086,8 +1086,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18535bb2bc5ed2742aa2ad5dbaf88cf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hungry: 0
-  hungryDeTime: 0
+  hungry: 100
+  hungryDeTime: 5
 --- !u!212 &212143107181681988
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -1606,7 +1606,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1ee5b2840c43d487f88872979d81c391, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b880df606e09f43c281b1f9d9af57112, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

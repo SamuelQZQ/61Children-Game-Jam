@@ -5,17 +5,19 @@ using UnityEngine;
 public class GlobalMono1 : MonoBehaviour {
 
     private GameObject UpCat;
+    private GameObject DownCat;
 
 
 	// Use this for initialization
 	void Start () {
         UpCat = GameObject.FindGameObjectWithTag("WholeCat");
+        DownCat = GameObject.FindGameObjectWithTag("Cat2");
 	}
 	
 	// Update is called once per frame
 	void Update () {
         Global.HungryDegree1 = UpCat.GetComponent<UpCat>().hungry;
-
+        Global.HungryDegree2 = DownCat.GetComponent<DownCat>().hungry;
     }
 }
 
