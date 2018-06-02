@@ -23,7 +23,14 @@ public class GeneratePee : MonoBehaviour {
         if (Global.isPee)
         {
             dir = Midpoint.transform.position - Anchor.transform.position;
-            dir = Vector3.Cross(dir, new Vector3(0, 0, 1));
+            if (Global.isRightMove)
+            {
+                dir = Vector3.Cross(dir, new Vector3(0, 0, 1));
+            }
+            else
+            {
+                dir = Vector3.Cross(dir, new Vector3(0, 0, -1));
+            }
             GameObject pee = Instantiate(Pee);
             pee.transform.position = this.transform.position;
             pee.GetComponent<Rigidbody2D>().AddForce( dir * Scale );

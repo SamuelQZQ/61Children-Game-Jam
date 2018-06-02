@@ -24,11 +24,13 @@ public class PersonMove : MonoBehaviour {
         {
             Player.transform.Rotate(new Vector3(180 ,0, 0), Space.Self);
             dir = true;
+            Global.isRightMove = true;
         }
         if (Input.GetAxis("Horizontal") < 0 && dir == true)
         {
             Player.transform.Rotate(new Vector3(180, 0, 0), Space.Self);
             dir = false;
+            Global.isRightMove = false;
         }
     }
 
