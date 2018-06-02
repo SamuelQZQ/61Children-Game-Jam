@@ -52,10 +52,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foodsCandidates:
-  - {fileID: 1011745891866784, guid: 5cbe15c0da75d4f3bb51ab188cc53706, type: 2}
+  - {fileID: 1800858164053628, guid: 5152717dc39ed994b89e1125b416f9dc, type: 2}
   lootPoints:
-  - {fileID: 4097443344587518, guid: 2c3df802c894948dab6711efc5c39c14, type: 2}
-  - {fileID: 4300165380633064, guid: 2c3df802c894948dab6711efc5c39c14, type: 2}
-  - {fileID: 4896503228556610, guid: 2c3df802c894948dab6711efc5c39c14, type: 2}
-  - {fileID: 4506032503308818, guid: 2c3df802c894948dab6711efc5c39c14, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   deltaFreshTime: 1

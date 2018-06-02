@@ -106,6 +106,8 @@ MonoBehaviour:
   isDrink: 0
   isPower: 0
   godTime: 0
+  clipUpCat: {fileID: 8300000, guid: 44ab231f54e154754bae4b54612d5b0e, type: 3}
+  clipDownCat: {fileID: 8300000, guid: 8527f2dfe25ec234395f65fee6854d4e, type: 3}
 --- !u!212 &212658631734631396
 SpriteRenderer:
   m_ObjectHideFlags: 1
