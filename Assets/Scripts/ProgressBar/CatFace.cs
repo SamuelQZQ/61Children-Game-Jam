@@ -26,9 +26,9 @@ public class CatFace : MonoBehaviour {
         else if (CatType == 2)
             hungry = Global.HungryDegree2;
 
-        if (hungry > 70)
+        if (hungry > 8)
             this.GetComponent<Image>().sprite = hungry100;
-        else if (hungry <= 70 && hungry > 30)
+        else if (hungry <= 8 && hungry > 5)
             this.GetComponent<Image>().sprite = hungry70;
         else
             this.GetComponent<Image>().sprite = hungry30;
