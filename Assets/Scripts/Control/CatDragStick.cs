@@ -21,7 +21,7 @@ public class CatDragStick : MonoBehaviour {
             mousePositionInWorld.z = transform.position.z;
 
             Vector3 dragForce = dragTransform.position - mousePositionInWorld;
-            dragForce = dragForce.normalized * (Global.HungryDegree2 / 10);
+            dragForce = dragForce.normalized * (Global.HungryDegree2);
             dragForce *= -scale;
 			if(dragForce.magnitude > maxForce) {
 				dragForce =  dragForce.normalized * maxForce;

@@ -16,12 +16,15 @@ public class FoodEvent : MonoBehaviour {
     public AudioClip clipDownCat;
     private bool isTouched = false;
 
+    public Animator upCatHeadAnimator;
+
     UpCat cat;
     DownCat cat2;
 	
 	void Awake () {
         cat = GameObject.FindGameObjectWithTag("WholeCat").GetComponent<UpCat>();
         cat2 = GameObject.FindGameObjectWithTag("Cat2").GetComponent<DownCat>();
+        upCatHeadAnimator = GameObject.FindGameObjectWithTag("Cat1").GetComponent<Animator>();
     }
 
     // Use this for initialization
@@ -41,7 +44,9 @@ public class FoodEvent : MonoBehaviour {
         if (collision.tag == "Cat1" && !isTouched)
         {
             Destroy(this.gameObject);
+            upCatHeadAnimator.SetTrigger("isEat");
             Global.FoodCount1 ++ ;
+            cat.hungry += 5;
             cat.ChangeVal(hungryVal, shitVal, weightVal);
             if (isDrink) cat.SetPee();
 
@@ -62,6 +67,7 @@ public class FoodEvent : MonoBehaviour {
         {
             Destroy(this.gameObject);
             Global.FoodCount2 ++;
+            cat2.hungry += 5;
             cat2.ChangeVal(hungryVal, shitVal, weightVal);
             if (isPower) cat2.SetGod(godTime);
 

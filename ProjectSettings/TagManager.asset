@@ -45,6 +45,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Foot
+    uniqueID: 2697598817
+    locked: 0
+  - name: Stick
+    uniqueID: 779223237
+    locked: 0
   - name: Hand
     uniqueID: 369447503
     locked: 0
