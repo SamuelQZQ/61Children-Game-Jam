@@ -14,9 +14,12 @@ public class DownCat : MonoBehaviour {
 
     CatDragStick catDragStick;
 
+    [HideInInspector]public bool isFire;
+
 	// Use this for initialization
 	void Start () {
         catDragStick = GameObject.FindGameObjectWithTag("WholeCat").GetComponent<CatDragStick>();
+        isFire = false;
 	}
 	
 	// Update is called once per frame

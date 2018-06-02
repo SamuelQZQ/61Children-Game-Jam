@@ -21,11 +21,13 @@ public class UpCat : MonoBehaviour {
     float waitPeeTime;
     public float peeDelay;
 
+    [HideInInspector]public bool isFire;
 
     void Start () {
         wantPee = false;
         hungryTimeTick = 0;
         isReadyPoo = false;
+        isFire = false;
 	}
 	
 	void Update () {

@@ -43,6 +43,9 @@ public class FoodEvent : MonoBehaviour {
     {
         if (collision.tag == "Cat1" && !isTouched)
         {
+            if (foodType == FoodType.WWWWeiLong) 
+                cat.isFire = true;
+
             Destroy(this.gameObject);
             upCatHeadAnimator.SetTrigger("isEat");
             Global.FoodCount1 ++ ;
@@ -65,6 +68,9 @@ public class FoodEvent : MonoBehaviour {
     {
         if (collision.collider.tag == "Cat2")
         {
+            if (foodType == FoodType.WWWWeiLong)
+                cat2.isFire = true;
+
             Destroy(this.gameObject);
             Global.FoodCount2 ++;
             cat2.hungry += 5;
