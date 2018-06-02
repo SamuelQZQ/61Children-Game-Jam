@@ -25,6 +25,7 @@ public class Global
 {
     public static bool isPoo = false;
     public static bool isPee = false;
+    public static bool isRightMove = false;
     public static bool gameStart = false;
     public static bool gameEnd = false;
     public static int HungryDegree1 = 100;
