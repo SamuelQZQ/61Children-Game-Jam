@@ -24,6 +24,8 @@ public class FoodEvent : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        GameObject wholeCat = GameObject.FindGameObjectWithTag("WholeCat");
+        Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), wholeCat.GetComponent<Collider2D>());
         this.GetComponent<Rigidbody2D>().Sleep();
     }
 
@@ -42,11 +44,12 @@ public class FoodEvent : MonoBehaviour {
         }
         else if (collision.tag == "Cat1Stick")
         {
+            Debug.Log("Wake Up!!");
             this.GetComponent<Rigidbody2D>().WakeUp();
             isTouched = true;
         }
 
-        }
+    }
 
         private void OnCollisionEnter2D(Collision2D collision)
     {
