@@ -55,3 +55,6 @@ TagManager:
   - name: Hand
     uniqueID: 369447503
     locked: 0
+  - name: HUD
+    uniqueID: 1206062659
+    locked: 0
