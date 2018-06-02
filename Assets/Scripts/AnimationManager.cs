@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AnimationManager : MonoBehaviour {
 
+    public GameObject UIBar;
+
     private GameObject Camera;
     private Animator animator;
     private GameObject cat2;
@@ -16,6 +18,7 @@ public class AnimationManager : MonoBehaviour {
         animator = Camera.GetComponent<Animator>();
         gravity = cat2.GetComponent<Rigidbody2D>().gravityScale;
         cat2.GetComponent<Rigidbody2D>().gravityScale = 0;
+        UIBar.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -23,6 +26,7 @@ public class AnimationManager : MonoBehaviour {
         AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
         if (info.normalizedTime >= 1.0f)
         {
+            UIBar.SetActive(true);
             cat2.GetComponent<Rigidbody2D>().gravityScale = gravity;
             Global.gameStart = true;
         }
