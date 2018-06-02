@@ -9,7 +9,7 @@ public class UpCat : MonoBehaviour {
     float hungryTimeTick;
     public float hungryDeTime = 1;
 
-    bool isReadyPoo;
+    [HideInInspector]public bool isReadyPoo;
     float readyPoolTime;
     public float waitPooTime = 1;
     public int shitMax = 3;
