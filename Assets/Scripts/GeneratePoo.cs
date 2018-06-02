@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GeneratePoo : MonoBehaviour {
 
-    public bool isPoo = false;
     public GameObject Poo;
 
 	// Use this for initialization
@@ -23,4 +22,9 @@ public class GeneratePoo : MonoBehaviour {
         }
 
 	}
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log(collision.collider.tag);
+    }
 }

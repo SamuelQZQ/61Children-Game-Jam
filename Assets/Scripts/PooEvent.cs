@@ -10,7 +10,8 @@ public class PooEvent : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+        GameObject wholeCat = GameObject.FindGameObjectWithTag("WholeCat");
+        Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), wholeCat.GetComponent<Collider2D>());
 	}
 	
 	// Update is called once per frame
@@ -25,5 +26,6 @@ public class PooEvent : MonoBehaviour {
             Global.gameEnd = true;
             Debug.Log(" the game is end!!");
         }
+
     }
 }
