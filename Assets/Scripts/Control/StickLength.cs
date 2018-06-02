@@ -7,7 +7,7 @@ using UnityEngine;
 public class StickLength : MonoBehaviour {
 
     public float MaxOffset = 1.0f;
-    public float Scale = 0.1f;
+    public float Scale = 1.0f;
     public GameObject Anchor;
     public GameObject MidPoint;
 
@@ -25,7 +25,7 @@ public class StickLength : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Dis = (MidPoint.transform.position - Anchor.transform.position).magnitude;
-        dir = MidPoint.transform.position - Anchor.transform.position;
+        dir = ( MidPoint.transform.position - Anchor.transform.position).normalized;
         dir.z = 0;
         Debug.DrawLine(MidPoint.transform.position, Anchor.transform.position, Color.green);
 
