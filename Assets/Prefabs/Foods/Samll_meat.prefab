@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foodType: 6
-  hungryVal: -3
+  hungryVal: -1
   shitVal: 1
   weightVal: 4
   isDrink: 0
