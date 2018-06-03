@@ -9,6 +9,8 @@ public class GlobalMono1 : MonoBehaviour {
     public GameObject Chief;
     public GameObject EndBG;
     public GameObject ReturnButton;
+    public int BallonCount;
+    public GameObject Ballon;
 
     private GameObject UpCat;
     private GameObject DownCat;
@@ -20,6 +22,7 @@ public class GlobalMono1 : MonoBehaviour {
         Chief.SetActive(false);
         EndBG.SetActive(false);
         ReturnButton.SetActive(false);
+        Ballon.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -44,8 +47,12 @@ public class GlobalMono1 : MonoBehaviour {
                 EndBG.SetActive(true);
             if (info.normalizedTime == 1.0f)
                 ReturnButton.SetActive(false);
-
         }
+        if ((Global.FoodCount1 + Global.FoodCount2) == BallonCount)
+        { 
+            Ballon.SetActive(true);
+        }
+
     }
 }
 
