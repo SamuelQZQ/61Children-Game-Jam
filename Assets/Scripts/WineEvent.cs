@@ -12,6 +12,8 @@ public class WineEvent : MonoBehaviour {
     private float oldMaxForce;
     private float oldScale;
 
+    public SpriteRenderer head1, head2;
+
 	// Use this for initialization
 	void Start () {
         Upcat = GameObject.FindGameObjectWithTag("WholeCat");
@@ -23,9 +25,10 @@ public class WineEvent : MonoBehaviour {
 	void Update () {
         if (Global.isWine)
         {
-            TimeDelay(timeLast);
+            StartCoroutine(TimeDelay(timeLast));
             Upcat.GetComponent<CatDragStick>().maxForce = maxforce;
             Upcat.GetComponent<CatDragStick>().scale = scale;
+            head2.color = head1.color = new Color(1, 0.5f , 0.5f, 1);
         }
 	}
 
@@ -35,5 +38,6 @@ public class WineEvent : MonoBehaviour {
         Global.isWine = false;
         Upcat.GetComponent<CatDragStick>().maxForce = oldMaxForce;
         Upcat.GetComponent<CatDragStick>().scale = oldScale;
+        head2.color = head1.color = Color.white;
     }
 }
