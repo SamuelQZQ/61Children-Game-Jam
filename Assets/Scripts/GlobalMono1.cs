@@ -67,6 +67,7 @@ public class Global
     public static bool gameStart = false;
     public static bool gameEnd = false;
     public static float TimeLeft = 10;
+    public static bool isWine = false;
     public static int HungryDegree1 = 100;
     public static int FoodCount1 = 0;
     public static int HungryDegree2 = 100;
