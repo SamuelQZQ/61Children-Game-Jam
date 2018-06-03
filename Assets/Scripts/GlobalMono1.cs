@@ -6,9 +6,12 @@ using UnityEngine.UI;
 public class GlobalMono1 : MonoBehaviour {
 
     public Text timeLeft;
+    public Text foodCount;
     public GameObject Chief;
     public GameObject EndBG;
     public GameObject ReturnButton;
+    public int BallonCount;
+    public GameObject Ballon;
 
     private GameObject UpCat;
     private GameObject DownCat;
@@ -20,6 +23,7 @@ public class GlobalMono1 : MonoBehaviour {
         Chief.SetActive(false);
         EndBG.SetActive(false);
         ReturnButton.SetActive(false);
+        Ballon.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -33,6 +37,7 @@ public class GlobalMono1 : MonoBehaviour {
                 Global.gameStart = false;
             }
             timeLeft.text = ((int)Global.TimeLeft).ToString();
+            foodCount.text = ((int)(Global.FoodCount1 + Global.FoodCount2)).ToString();
             Global.HungryDegree1 = UpCat.GetComponent<UpCat>().hungry;
             Global.HungryDegree2 = DownCat.GetComponent<DownCat>().hungry;
         }
@@ -40,12 +45,17 @@ public class GlobalMono1 : MonoBehaviour {
         {
             Chief.SetActive(true);
             AnimatorStateInfo info = Chief.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0);
-            if (info.normalizedTime == 0.5f)
+            if (info.normalizedTime >= 0.5f)
                 EndBG.SetActive(true);
-            if (info.normalizedTime == 1.0f)
-                ReturnButton.SetActive(false);
+            if (info.normalizedTime >= 1.0f)
+                ReturnButton.SetActive(true);
 
         }
+        if ((Global.FoodCount1 + Global.FoodCount2) == BallonCount)
+        { 
+            Ballon.SetActive(true);
+        }
+
     }
 }
 
