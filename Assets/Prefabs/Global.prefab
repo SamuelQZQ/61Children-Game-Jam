@@ -588,9 +588,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e6d06ada73f0f47865a285b6e6373f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLast: 3
-  maxforce: 0
-  scale: 0
+  timeLast: 10
+  maxforce: 1500
+  scale: 1000000
+  head1: {fileID: 0}
+  head2: {fileID: 0}
 --- !u!114 &114331872775795702
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -654,7 +656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15b37034acba36c479eb032606aec5a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: {fileID: 114617372224719800}
+  timeLeft: {fileID: 0}
   foodCount: {fileID: 114489057681936602}
   Chief: {fileID: 1457973362827666}
   EndBG: {fileID: 1414127783644862}
@@ -819,7 +821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e471fa2fd4afb94685dc032e4bd5838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIBar: {fileID: 1272090003252364}
+  UIBar: {fileID: 0}
 --- !u!114 &114695385791811630
 MonoBehaviour:
   m_ObjectHideFlags: 1

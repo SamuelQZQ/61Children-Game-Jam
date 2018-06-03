@@ -7,7 +7,6 @@ using UnityEngine;
 public class FoodEvent : MonoBehaviour {
 
     public FoodType foodType;
-
     public int hungryVal, shitVal, weightVal;
     public bool isDrink, isPower;
     public float godTime;
@@ -22,6 +21,9 @@ public class FoodEvent : MonoBehaviour {
     DownCat cat2;
 	
 	void Awake () {
+        //SpriteRenderer sprite = new SpriteRenderer();
+        //sprite.color = Color.red;
+            
         cat = GameObject.FindGameObjectWithTag("WholeCat").GetComponent<UpCat>();
         cat2 = GameObject.FindGameObjectWithTag("Cat2").GetComponent<DownCat>();
         upCatHeadAnimator = GameObject.FindGameObjectWithTag("Cat1").GetComponent<Animator>();
@@ -45,6 +47,9 @@ public class FoodEvent : MonoBehaviour {
         {
             if (foodType == FoodType.WWWWeiLong) 
                 cat.isFire = true;
+
+            if (foodType == FoodType.WWWRedStar)
+                Global.isWine = true;
 
             Destroy(this.gameObject);
             upCatHeadAnimator.SetTrigger("isEat");
@@ -71,6 +76,9 @@ public class FoodEvent : MonoBehaviour {
             if (foodType == FoodType.WWWWeiLong)
                 cat2.isFire = true;
 
+            if (foodType == FoodType.WWWRedStar)
+                Global.isWine = true;
+            
             Destroy(this.gameObject);
             Global.FoodCount2 ++;
             cat2.hungry += 5;
