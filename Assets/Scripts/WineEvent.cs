@@ -23,7 +23,7 @@ public class WineEvent : MonoBehaviour {
 	void Update () {
         if (Global.isWine)
         {
-            TimeDelay(timeLast);
+            StartCoroutine(TimeDelay(timeLast));
             Upcat.GetComponent<CatDragStick>().maxForce = maxforce;
             Upcat.GetComponent<CatDragStick>().scale = scale;
         }
