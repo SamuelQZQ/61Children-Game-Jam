@@ -43,10 +43,11 @@ public class GlobalMono1 : MonoBehaviour {
         {
             Chief.SetActive(true);
             AnimatorStateInfo info = Chief.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0);
-            if (info.normalizedTime == 0.5f)
+            if (info.normalizedTime >= 0.5f)
                 EndBG.SetActive(true);
-            if (info.normalizedTime == 1.0f)
-                ReturnButton.SetActive(false);
+            if (info.normalizedTime >= 1.0f)
+                ReturnButton.SetActive(true);
+
         }
         if ((Global.FoodCount1 + Global.FoodCount2) == BallonCount)
         { 
