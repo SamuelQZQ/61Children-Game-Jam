@@ -113,96 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &172363538 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1754896174031820, guid: f67e7ea8b32e243d5a4be7aab28b5617,
-    type: 2}
-  m_PrefabInternal: {fileID: 863613871}
---- !u!82 &172363539
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 172363538}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9de8c6135c8fd4a3d864ee21b7cadee0, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
---- !u!4 &279489036 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4896503228556610, guid: 2c3df802c894948dab6711efc5c39c14,
-    type: 2}
-  m_PrefabInternal: {fileID: 1894506030}
 --- !u!1001 &522978857
 Prefab:
   m_ObjectHideFlags: 0
@@ -307,11 +217,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &777966623 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4506032503308818, guid: 2c3df802c894948dab6711efc5c39c14,
-    type: 2}
-  m_PrefabInternal: {fileID: 1894506030}
 --- !u!1001 &780550399
 Prefab:
   m_ObjectHideFlags: 0
@@ -350,6 +255,16 @@ Prefab:
     - target: {fileID: 4462886830337908, guid: 78f13196d0a5e404daa8a4d812fe03db, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114285026218120622, guid: 78f13196d0a5e404daa8a4d812fe03db,
+        type: 2}
+      propertyPath: maxforce
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114285026218120622, guid: 78f13196d0a5e404daa8a4d812fe03db,
+        type: 2}
+      propertyPath: scale
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78f13196d0a5e404daa8a4d812fe03db, type: 2}
@@ -392,36 +307,6 @@ Prefab:
     - target: {fileID: 4820574069505604, guid: f67e7ea8b32e243d5a4be7aab28b5617, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114494248957754206, guid: f67e7ea8b32e243d5a4be7aab28b5617,
-        type: 2}
-      propertyPath: lootPoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 1390468981}
-    - target: {fileID: 114494248957754206, guid: f67e7ea8b32e243d5a4be7aab28b5617,
-        type: 2}
-      propertyPath: lootPoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 1666340824}
-    - target: {fileID: 114494248957754206, guid: f67e7ea8b32e243d5a4be7aab28b5617,
-        type: 2}
-      propertyPath: lootPoints.Array.data[2]
-      value: 
-      objectReference: {fileID: 279489036}
-    - target: {fileID: 114494248957754206, guid: f67e7ea8b32e243d5a4be7aab28b5617,
-        type: 2}
-      propertyPath: lootPoints.Array.data[3]
-      value: 
-      objectReference: {fileID: 777966623}
-    - target: {fileID: 82714264944154326, guid: f67e7ea8b32e243d5a4be7aab28b5617,
-        type: 2}
-      propertyPath: spreadCustomCurve.m_RotationOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 82770453639448880, guid: f67e7ea8b32e243d5a4be7aab28b5617,
-        type: 2}
-      propertyPath: spreadCustomCurve.m_RotationOrder
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f67e7ea8b32e243d5a4be7aab28b5617, type: 2}
@@ -552,16 +437,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8000460996928429c941ada08e8c9eda, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1390468981 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4097443344587518, guid: 2c3df802c894948dab6711efc5c39c14,
-    type: 2}
-  m_PrefabInternal: {fileID: 1894506030}
---- !u!4 &1666340824 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4300165380633064, guid: 2c3df802c894948dab6711efc5c39c14,
-    type: 2}
-  m_PrefabInternal: {fileID: 1894506030}
 --- !u!1001 &1894506030
 Prefab:
   m_ObjectHideFlags: 0
