@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GlobalMono1 : MonoBehaviour {
 
     public Text timeLeft;
+    public Text foodCount;
     public GameObject Chief;
     public GameObject EndBG;
     public GameObject ReturnButton;
@@ -36,6 +37,7 @@ public class GlobalMono1 : MonoBehaviour {
                 Global.gameStart = false;
             }
             timeLeft.text = ((int)Global.TimeLeft).ToString();
+            foodCount.text = ((int)(Global.FoodCount1 + Global.FoodCount2)).ToString();
             Global.HungryDegree1 = UpCat.GetComponent<UpCat>().hungry;
             Global.HungryDegree2 = DownCat.GetComponent<DownCat>().hungry;
         }
